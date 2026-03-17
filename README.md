@@ -1,27 +1,27 @@
 # Devops-project-1
 I download the log fie using 
- curl -O https://gist.githubusercontent.com/kamranahmedse/e66c3b9ea89a1a030d3b739eeeef22d0/raw/77fb3ac837a73c4f0206e78a236d885590b7ae35/nginx-access.log
+        curl -O https://gist.githubusercontent.com/kamranahmedse/e66c3b9ea89a1a030d3b739eeeef22d0/raw/77fb3ac837a73c4f0206e78a236d885590b7ae35/nginx-access.log
  
  To check the file, I use
 
- ls  
+         ls  
 
  To see the total lines, I use
 
- wc -l nginx-access.log
+          wc -l nginx-access.log
 
  Top 5 IP addresses with the most requests, I use
 
- awk '{print $1}' nginx-access.log |  sort | uniq -c | sort -nr | head -5
+          awk '{print $1}' nginx-access.log |  sort | uniq -c | sort -nr | head -5
 
                    OR
 
- grep -o '^[0-9.]*' nginx-access.log | sort | uniq -c | sort -nr | head -5
+          grep -o '^[0-9.]*' nginx-access.log | sort | uniq -c | sort -nr | head -5
 
 
  Output will be
 
-  1087 178.128.94.113
+   1087 178.128.94.113
    1087 142.93.136.176
    1087 138.68.248.85
    1086 159.89.185.30
@@ -30,9 +30,11 @@ I download the log fie using
 
  To see top 5 most requested paths, I use
 
- awk '{print $7}' nginx-access.log | sort | uniq -c | sort -nr | head -5
+        awk '{print $7}' nginx-access.log | sort | uniq -c | sort -nr | head -5
+              
+                  OR
 
-  grep -o '"GET [^ ]*' nginx-access.log | sed 's/"GET //' | sort | uniq -c | sort -nr | head -5
+        grep -o '"GET [^ ]*' nginx-access.log | sed 's/"GET //' | sort | uniq -c | sort -nr | head -5
 
 
  Output will be
