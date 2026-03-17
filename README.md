@@ -1,5 +1,6 @@
 # Devops-project-1
-I download the log fie using 
+I download the log fie using
+
         curl -O https://gist.githubusercontent.com/kamranahmedse/e66c3b9ea89a1a030d3b739eeeef22d0/raw/77fb3ac837a73c4f0206e78a236d885590b7ae35/nginx-access.log
  
  To check the file, I use
@@ -22,9 +23,13 @@ I download the log fie using
  Output will be
 
    1087 178.128.94.113
+
    1087 142.93.136.176
+
    1087 138.68.248.85
+
    1086 159.89.185.30
+   
     277 86.134.118.70
 
 
