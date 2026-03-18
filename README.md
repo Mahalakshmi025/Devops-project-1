@@ -1,7 +1,7 @@
 # Devops-project-1
 Project URL:
 
-        https://github.com/Mahalakshmi025/Devops-project-1
+       https://Mahalakshmi025.github.io/Devops-project-1/
 
  I download the log fie using
 
