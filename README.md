@@ -1,7 +1,7 @@
 # Devops-project-1
 Project URL:
 
-       https://Mahalakshmi025.github.io/Devops-project-1/
+       https://roadmap.sh/projects/nginx-log-analyser
 
  I download the log fie using
 
